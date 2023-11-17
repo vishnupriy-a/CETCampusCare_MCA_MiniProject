@@ -1,0 +1,68 @@
+@import "../../style.scss";
+
+.contactpage {
+  min-height: 100vh;
+  @include themify($themes) {
+    background-color: themed("bgSoft");
+    color: themed("textColor");
+  }
+
+  .contact-container {
+    text-align: center;
+  }
+
+  /* Your other contact page styles here */
+
+  .headingcontact {
+    color: rgb(12, 43, 165);
+    font-size: x-large;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 20px;
+  }
+  
+  .contact-name {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .contact-details {
+    text-align: left;
+    flex: 2;
+  }
+  
+  .contentcontact {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 8px;
+    // background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+}
+
+// .contactpage{
+//     background-color: #ffffff;}
+// .contact-container {
+//     text-align: center;
+//   }
+  
+  
