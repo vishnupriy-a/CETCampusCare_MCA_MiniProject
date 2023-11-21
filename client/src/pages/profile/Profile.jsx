@@ -53,10 +53,12 @@ const Profile = () => {
   };
 
   return (
+    
     <div className="profile">
       {isLoading ? (
         "loading"
       ) : (
+        
         <>
           <div className="images">
             <img src={"/upload/"+data.coverPic} alt="" className="cover" />
@@ -82,6 +84,7 @@ const Profile = () => {
                   "loading"
                 ) : userId === currentUser.id ? (
                   <button onClick={() => setOpenUpdate(true)}>update</button>
+                  // window.location.reload();
                 ) : (""
                   // <button onClick={handleFollow}>
                   //   {relationshipData.includes(currentUser.id)

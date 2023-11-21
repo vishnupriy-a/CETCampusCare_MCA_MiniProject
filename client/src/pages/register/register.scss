@@ -1,7 +1,8 @@
 .register{
   height: 100vh;//to fill the full
-  // background-color: #f4ae6c9c;//background color
-  background: linear-gradient(rgba(203, 161, 34, 0.582),rgba(13, 79, 101, 0.653)), url("")center;
+   background-color: #f4ae6c9c;//background color
+  // background: linear-gradientrgb(rgb(241, 241, 44),rgb(151, 103, 218)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;
+  display:flex;
   display: flex;//center the content
   align-items: center;
   justify-content: center;
@@ -10,20 +11,22 @@
   .card{
       display: flex;
       flex-direction: row-reverse;// ro reverse(ie register 1st and image 2nd)
-      background-color: #e8edf100;
+    //   background-color: white;
+    background: linear-gradient(rgb(151, 103, 218),rgb(241, 241, 44)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
+
       width: 50%;//for the login and register winidow
-      border-radius: 20px;
+      border-radius: 90px;
       min-height: 400px;//size of the register and login window
 
       .left{
           flex: 1;//to adjust the login and register section side by side
-          background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("https://images.pexels.com/photos/1624497/pexels-photo-1624497.jpeg")center;//background image of login and linear-background to give a gradient color over the image
+          background: linear-gradient(rgb(241, 241, 44),rgb(151, 103, 218)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
           background-size: cover;//to adjust the image zoom
           padding: 30px;
           display: flex;//align the components vertically
           flex-direction: column;//to arrange the elements in column(verticcal)
           gap: 30px;
-          border-radius: 0px 0px 90px 0px;
+          border-radius: 0px 90px 90px 0px;
           color: white;
           h1{
               font-size: 40px;
@@ -40,11 +43,14 @@
               // height: 30px;
               padding: 10px;
               // border-radius: 10x;
-              border-radius: 9px;
+              border-radius: 10px;
               border: none;
-              //background-color: linear-gradient(rgba(84, 31, 245, 0.877),rgba(68, 73, 68, 0.284))
-              background-color: rgb(255, 255, 255);
-              color: #938eef;
+            //   background: linear-gradient(rgb(241, 241, 44),rgb(151, 103, 218)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
+
+              background-color: linear-gradient(rgba(84, 31, 245, 0.877),rgba(68, 73, 68, 0.284));
+            //  background-color: rgb(255, 255, 255);
+            // background-color:rgb(91, 103, 196);
+              color: #5d58aa;
               font-weight: bold;
               cursor: pointer;
               
@@ -58,8 +64,10 @@
           flex-direction: column;
           gap: 40px;
           justify-content: center;
-          border-radius: 90px 0px 0px 0px;
-          background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("")center;
+          // border-radius: 20px;
+          //  border-radius: 90px 0px 00px 0px;
+        //   background: linear-gradient(rgb(234, 232, 232),rgb(150, 150, 210));
+        //   background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("")center;
           h1{
               color: #555;
           }
@@ -80,7 +88,8 @@
                   padding: 10px;
                   border-radius: 9px;
                   border: none;
-                  background-color: #938eef;
+                //   background-color: #938eef;
+                background-color:rgb(91, 103, 196);
                   color: white;
                   font-weight: bold;
                   cursor: pointer;
@@ -89,3 +98,108 @@
       }
   }
 }
+////////////////////////////////////////////////
+
+
+
+
+// .register{
+//     height: 100vh;
+//     background:linear-gradient(rgb(151, 103, 218),rgb(237, 237, 37)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;
+//     display:flex;
+//     align-items: center;
+//     //used to align items in the left center
+//     justify-content: center;
+//     // this is to center of the whole page
+  
+  
+//     .card{
+//         background-color: white;
+//         display:flex;
+//         flex-direction: row-reverse;
+//         width:55%;
+//         // border-radius: 50px 10px 50px 10px;
+//         border-radius: 50px 10px 50px 10px;
+//         min-height: 600px;
+//         overflow: hidden;
+  
+//         .left{
+//             flex:1;
+//             background:linear-gradient(rgb(237, 237, 37),rgb(151, 103, 218)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;
+//             background-size: cover;
+//             padding: 50px;
+//             display: flex;
+//             border-radius: 0px 0px 0px 0px;
+//             gap:30px;
+//             color:black;
+//             flex-direction: column;
+//             justify-content: center;
+//             h1{
+//                 font-size: 50px;
+//                 line-height: 50px;
+//                 margin-top: -105px;
+//             }
+//             p{
+//                 margin-top: 35px;
+//                 font-size: 15px;
+//                 font-weight:lighter;
+//                 font-family: 'Times New Roman', Times, serif;
+//             }
+//             span{
+//                 font-weight: bold;
+//                 font-size: 10px;
+//             }
+//             button{
+//                 padding: 10px;
+//                 width: 30%;
+//                 border:none;
+//                 background-color:rgb(91, 103, 196);
+//                 font-weight: bold;
+//                 cursor: pointer;
+//                 border-radius: 10px 10px 10px 10px;
+//             }
+  
+//         }
+//         .right{
+//             flex:1;
+//             padding: 50px;
+//             border-radius: 50px;
+//             gap:50px;
+//             display:flex;
+//             flex-direction: column;
+//             border-radius: 10px 0px 0px 10px;
+//             background: linear-gradient(rgb(234, 232, 232),rgb(150, 150, 210));
+//             // border-radius: 50px 50px 50px 50px;
+//             h1{
+//                 font-size: 40px;
+//             }
+//             form{
+//                 // border-radius: 50px 50px 50px 50px;
+//                 display:flex;
+//                 flex-direction: column;
+//                 height:100%;
+//                 width: 219px;
+//                 input{
+//                     border-radius: 10px 10px 10px 10px;
+//                     margin-top: 20px;
+//                     border: none;
+//                     border-bottom: 1px solid lightgray;
+//                     padding: 10px 20px;
+//                 }
+//                 button{
+//                     margin-top: 30px;
+//                     padding: 10px;
+//                     width: 40%;
+//                     border:none;
+//                     border-radius: 10px 10px 10px 10px;
+//                     background-color:rgb(91, 103, 196);
+//                     font-weight: bold;
+//                     cursor: pointer;
+//                 }
+//         }
+            
+  
+//         }
+//     }
+  
+//   }

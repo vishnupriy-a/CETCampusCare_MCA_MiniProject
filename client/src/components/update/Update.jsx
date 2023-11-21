@@ -227,7 +227,7 @@ const Update = ({ setOpenUpdate, user }) => {
         <form>
           <div className="files">
             <label htmlFor="cover">
-              <span>Cover Picture</span>
+              <span>Profile Picture</span>
               <div className="imgContainer">
                 <img
                   src={
@@ -247,7 +247,7 @@ const Update = ({ setOpenUpdate, user }) => {
               onChange={(e) => setCover(e.target.files[0])}
             />
             <label htmlFor="profile">
-              <span>Profile Picture</span>
+              <span>Cover Picture</span>
               <div className="imgContainer">
                 <img
                   src={

@@ -25,6 +25,7 @@ const LeftBar = () => {
             <Link
                 to={`/profile/${currentUser.id}`}
                 style={{ textDecoration: "none", color: "inherit" }}
+                
               >
             <span style={{ textDecoration: "none", color:"grey"}}>{currentUser.name}</span></Link>
           </div>
