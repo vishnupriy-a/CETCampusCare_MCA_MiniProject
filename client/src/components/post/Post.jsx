@@ -12,6 +12,9 @@ import { useQuery, useQueryClient, useMutation } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
 import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
+import { Avatar } from "@mui/material"; // Import the Avatar component from Material-UI
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
 
 const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
@@ -119,7 +122,15 @@ const Post = ({ post }) => {
       <div className="container">
         <div className="user">
           <div className="userInfo">
-            <img src={"/upload/"+post.profilePic} alt="" />
+            {/* <img src={"/upload/"+post.profilePic} alt="" /> */}
+            {post.profilePic ? (
+              <Avatar
+                src={"/upload/" + post.profilePic}
+                alt="User profile"
+              />
+            ) : (
+              <AccountCircleIcon />
+            )}
             <div className="details">
               <Link
                 to={`/profile/${post.userId}`}

@@ -1,10 +1,13 @@
 import "./share.scss";
 import Image from "../../assets/img.png";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Map from "../../assets/map.png";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/authContext";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { makeRequest } from "../../axios";
+import { Avatar } from "@mui/material"; // Import the Avatar component from Material-UI
+
 const Share = () => {
   const [file, setFile] = useState(null);
   const [desc, setDesc] = useState("");
@@ -50,7 +53,17 @@ const Share = () => {
       <div className="container">
         <div className="top">
           <div className="left">
-            <img src={"/upload/" + currentUser.profilePic} alt="" />
+            {/* <img src={"/upload/" + currentUser.profilePic} alt="" /> */}
+            
+            {currentUser.profilePic ? (
+              <Avatar
+                src={"/upload/" + currentUser.profilePic}
+                alt="User profile"
+              />
+            ) : (
+              <AccountCircleIcon />
+            )}
+
             <input
               type="text"
               placeholder={`What's on your mind ${currentUser.name}?`}
