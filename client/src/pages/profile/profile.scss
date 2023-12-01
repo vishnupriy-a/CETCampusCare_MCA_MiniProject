@@ -1,6 +1,7 @@
 @import "../../style.scss";
 
 .profile {
+  min-height: 100vh;
   @include themify($themes) {
     background-color: themed("bgSoft");
 
