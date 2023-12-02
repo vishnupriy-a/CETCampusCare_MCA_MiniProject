@@ -4,7 +4,7 @@ import { getPosts, addPost, deletePost, completedPost, getResolvedPosts,getUserP
 const router = express.Router();
 
 router.get("/resolved", getResolvedPosts);
-router.get("/profile/5", getUserPosts);
+router.get("/profile/", getUserPosts);
 router.get("/", getPosts);
 router.post("/", addPost);
 router.delete("/:id", deletePost);

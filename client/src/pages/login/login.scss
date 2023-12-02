@@ -1,16 +1,18 @@
 
 .login{
     height: 100vh;//to fill the full
-    background-color: rgb(108, 169, 244);//background color
+    background-color: #f3eded;
+    background-size: cover;//background color
     // background: linear-gradient(rgba(254, 252, 255, 0.582),rgba(19, 19, 19, 0.653)),url("")center;
     display: flex;//center the content
     align-items: center;
+    // background: url("https://scontent.fccj6-2.fna.fbcdn.net/v/t39.30808-1/315175155_578077024121355_844952131350001035_n.jpg?stp=dst-jpg_s320x320&_nc_cat=105&ccb=1-7&_nc_sid=596444&_nc_ohc=V8Y0rwCYOOMAX-ZNIBP&_nc_ht=scontent.fccj6-2.fna&oh=00_AfADV6dN2mY1XMSkF5t6UHcDF6Y_9eivAPWw-TQ_-s-9Qw&oe=656F6351")no-repeat;
     justify-content: center;
   
   
     .card{
         display: flex;
-        background-color: rgba(232, 237, 241, 0);
+        background-color: rgba(197, 68, 68, 0);
         width: 50%;//for the login and register winidow
         height: 500px;
         border-radius: 10px;
@@ -35,18 +37,20 @@
   
             }
             span{
-                color: rgb(43, 42, 42);
+                color: rgb(6, 5, 5);
                 font-weight: bold;
                 font-size: 12px;
             }
             button{
                 width: 80px;
-                background: linear-gradient(rgb(202, 186, 186),rgba(42, 105, 193, 0.747));
+                background:#176B87;
+                color: #37346e;
                 // height: 30px;
                 padding: 10px;
                 border-radius: 9px;
                 border: none;
-                color: #7f2bc99a;
+                // background-color:yellow ;
+                color:white;
                 font-weight: bold;
                 cursor: pointer;
                 
@@ -83,11 +87,16 @@
                     padding: 10px;
                     border: none;
                     border-radius: 9px;
-                    background-color: #938eef;
-                    color: white;
+                    background-color: #37346e;
+                    // color: rgb(101, 19, 101);
+                    color: rgb(255, 255, 255);
                     font-weight: bold;
                     cursor: pointer;
                 }
+                // .left button.regbutton
+                // {
+                //     background-color:yellow;
+                // }
             }
         }
     }

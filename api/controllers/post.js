@@ -26,19 +26,24 @@ export const getPosts = (req, res) => {
 };
 ///////////////////////////////////////////////////////////
 export const getUserPosts = (req, res) => {
-  console.log('reached resolved');
+  const { userId } = req.body; // Assuming the form data contains userId
+
   const token = req.cookies.accessToken;
   if (!token) return res.status(401).json("Not logged in!");
+  
   jwt.verify(token, "secretkey", (err, userInfo) => {
     if (err) return res.status(403).json("Token is not valid!");
-    const q= ` SELECT p.*, u.id AS userId, name, profilePic, COUNT(v.postId) AS upvotesCount, p.completedTime AS completedTime
-    FROM posts AS p
-    JOIN users AS u ON u.id = p.userId
-    LEFT JOIN upvotes AS v ON v.postId = p.id
-    WHERE p.id != 1 AND p.completed = 1
-    GROUP BY p.id, u.id, name, profilePic
-    ORDER BY completedTime DESC;
+
+    const q = `
+      SELECT p.*, u.id AS userId, u.name, u.profilePic, COUNT(v.postId) AS upvotesCount, p.completedTime AS completedTime
+      FROM posts AS p
+      JOIN users AS u ON u.id = p.userId
+      LEFT JOIN upvotes AS v ON v.postId = p.id
+      WHERE u.id = ${userInfo.id} 
+      GROUP BY p.id, u.id, u.name, u.profilePic, p.completedTime
+      ORDER BY p.createdAt DESC;
     `;
+    
     db.query(q, (err, data) => {
       if (err) return res.status(500).json(err);
       console.log(data);
@@ -46,6 +51,7 @@ export const getUserPosts = (req, res) => {
     });
   });
 };
+
 ///////////////////////////////////////////////////////////
 
 

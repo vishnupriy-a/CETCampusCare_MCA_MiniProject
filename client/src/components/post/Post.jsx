@@ -132,12 +132,13 @@ const Post = ({ post }) => {
               <AccountCircleIcon />
             )}
             <div className="details">
-              <Link
+              {/* <Link
                 to={`/profile/${post.userId}`}
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <span className="name">{post.name}</span>
-              </Link>
+              </Link> */}
+              <span className="name">{post.name}</span>
               <span className="date">{moment(post.createdAt).fromNow()}</span>
             </div>
 
