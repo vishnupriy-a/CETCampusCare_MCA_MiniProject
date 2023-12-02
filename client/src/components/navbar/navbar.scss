@@ -17,7 +17,13 @@
     .left {
       display: flex;
       align-items: center;
-      gap: 30px;
+      gap: 40px;
+      // margin-left: -30px;
+
+      .homeicon{
+        margin-left: -40px;
+        margin-top: 7px;
+      }
 
       span {
         font-weight: bold;

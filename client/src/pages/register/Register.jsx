@@ -72,7 +72,7 @@ const Register = () => {
           <br />
           <br />
           <br />
-          <p>Let's join together to make our campus a better place</p>
+          <p><b>Let's join together to make our campus a better place</b></p>
           <span>Have an account?</span>
           <Link to="/login">
             <button>Login</button>

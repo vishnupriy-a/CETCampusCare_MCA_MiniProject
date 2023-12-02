@@ -78,7 +78,9 @@ const Navbar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span>CET CampusCare</span>
         </Link>
+        <div className="homeicon">
         <HomeOutlinedIcon />
+        </div>
         {darkMode ? (
           <WbSunnyOutlinedIcon onClick={toggle} />
         ) : (

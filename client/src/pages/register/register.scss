@@ -3,8 +3,9 @@
   background-size: cover;
   //  background-color: #f4ae6c9c;//background color
   // background:url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;
-  background: url("https://scontent.fccj6-2.fna.fbcdn.net/v/t39.30808-6/302302703_527238745871850_5434741920422195513_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=_2kv6Los0jIAX8-H-IS&_nc_ht=scontent.fccj6-2.fna&oh=00_AfBjO2uXYxPf3DSaDK_vzcfLu899pjBGCPe5IQwiIARwyg&oe=656F0971");
-  
+  // background: url("https://scontent.fccj6-2.fna.fbcdn.net/v/t39.30808-6/302302703_527238745871850_5434741920422195513_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=783fdb&_nc_ohc=_2kv6Los0jIAX8-H-IS&_nc_ht=scontent.fccj6-2.fna&oh=00_AfBjO2uXYxPf3DSaDK_vzcfLu899pjBGCPe5IQwiIARwyg&oe=656F0971");
+  background-image: url("file:///C:/Users/hp/Pictures/IMG_20231202_2022541.jpg");
+
   display:flex;
   display: flex;//center the content
   align-items: center;
@@ -16,15 +17,19 @@
       display: flex;
       flex-direction: row-reverse;// ro reverse(ie register 1st and image 2nd)
     //   background-color: white;
-    // background: linear-gradient(grey,rgb(134, 134, 129)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
-    background:linear-gradient(transparent,transparent),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
+    //  background: linear-gradient(grey,rgb(134, 134, 129)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
+     background: linear-gradient(rgba(193, 190, 205, 0.073),rgba(122, 208, 107, 0.128));
+    // url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
       width: 50%;//for the login and register winidow
       border-radius: 90px;
       min-height: 400px;//size of the register and login window
 
       .left{
           flex: 1;//to adjust the login and register section side by side
-          background-color:grey,url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
+          background: linear-gradient(rgba(193, 190, 205, 0.242),rgba(122, 208, 107, 0.269));
+          // background: linear-gradient(rgba(123, 89, 223, 0.114),rgba(122, 208, 107, 0.128)), url("")center;
+
+          // url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
           background-size: cover;//to adjust the image zoom
           padding: 30px;
           display: flex;//align the components vertically
@@ -40,6 +45,8 @@
             
           }
           span{
+            color: rgba(0, 0, 255, 0.801);
+            font-weight: bold;
               font-size: 12px;
           }
           button{
@@ -51,7 +58,7 @@
               border: none;
             //   background: linear-gradient(rgb(241, 241, 44),rgb(151, 103, 218)),url("https://images.pexels.com/photos/2847648/pexels-photo-2847648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")center;//background image of login and linear-background to give a gradient color over the image
 
-              background-color: linear-gradient(rgba(84, 31, 245, 0.877),rgba(68, 73, 68, 0.284));
+              background-color: linear-gradient(rgba(85, 31, 245, 0.313),rgba(68, 73, 68, 0.284));
             //  background-color: rgb(255, 255, 255);
             // background-color:rgb(91, 103, 196);
               color: #5d58aa;
@@ -69,11 +76,17 @@
           gap: 40px;
           justify-content: center;
           // border-radius: 20px;
-          //  border-radius: 90px 0px 00px 0px;
-          background-color:transparent;
-        //   background: linear-gradient(rgba(122, 89, 223, 0.349),rgba(122, 208, 107, 0.284)), url("")center;
+          border-radius: 90px 0px 0px 90px;
+          // background-color:transparent;
+        // background: linear-gradient(rgba(123, 89, 223, 0.114),rgba(122, 208, 107, 0.128)), url("")center;
+        background: linear-gradient(rgba(193, 190, 205, 0.242),rgba(122, 208, 107, 0.269));
+
           h1{
-              color: #555;
+              // color: #555;
+              color: rgb(40, 2, 2);
+          }
+          p{
+            font-weight: bold;
           }
           form{
               display: flex;
